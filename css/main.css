@@ -142,9 +142,6 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-.page-content {
-
-}
 .content-section {
     /* width: 100vw; */
     padding-left: 25vw;
@@ -168,12 +165,6 @@ body {
     list-style-type: none;
     display:flex;  
     list-style:none;
-}
-.band-members_items {
-  
-}
-.band-members_item {
-
 }
 .band-members__image {
     filter: brightness(50%);
@@ -215,15 +206,12 @@ body {
     color:  rgba(204, 200, 255, 0.5);
     margin-right: 20px;
 }
-.about-section {
-
-}
 .about-section__desc {
     padding: 30px;
     padding-top: 20px;
     width:25vw;
     z-index: 1;
-    background-color: rgb(42, 39, 85);
+    background-color: rgb(36, 6, 45);
     border-bottom: 3px solid rgba(236, 0, 140, 1);
     position: relative;
     bottom: 100px;
@@ -257,17 +245,8 @@ iframe {
     background-image: url("../img/background.svg");
     background-size: cover;
 }
-.concerts {
-
-}
-.concerts__item {
-    
-}
 .concerts__image {
     border-bottom: 3px solid rgba(236, 0, 140, 1);
-}
-.concerts__info {
-
 }
 .concerts__date {
     font-family: 'OpenSans', sans-serif;
@@ -295,22 +274,16 @@ iframe {
     border-left: none;
     list-style:none;
 }
-.gallery_item {
-}
 .gallery__image {
     border-top: 3px solid rgba(236, 0, 140, 1);
 }
 address {
     font-family: OpenSans;
     font-size: 13px;
+    font-style: normal;
     letter-spacing: 1.5px;
     color:rgba(204, 200, 255, 0.8);
-}
-.form {
-   
-}
-.form__field {
-
+    float:right;
 }
 .form__label {
     font-family: OpenSans;
@@ -331,11 +304,6 @@ address {
 }
 .social-links {
     list-style-type: none;
-}
-.social-links__item {
-
-}
-.social-links__link {
 }
 .screen-reader-only {
     display: none; 
