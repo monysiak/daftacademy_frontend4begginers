@@ -1,0 +1,342 @@
+body {
+    color:#888089;
+    background-color:#25072e;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box; 
+}
+.button {
+    font-family: Helvetica;
+    font-weight: semibold;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    background-color: rgba(204, 200, 255, 0.10);
+    border-style: hidden;
+    border: 1px solid rgba(204, 200, 255, 0.10);
+    color: rgba(204, 200, 255, 0.8);
+    text-transform: uppercase;
+}
+.button:active{
+    font-family: Helvetica;
+    font-weight: semibold;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    background-color: rgba(204, 200, 255, 0.3);
+    border: 1px solid rgba(204, 200, 255, 0.10);
+    color: rgba(204, 200, 255, 0.8);
+    text-transform: uppercase;
+}
+.button:disabled{
+    font-family: Helvetica;
+    font-weight: semibold;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    background-color: rgba(204, 200, 255, 0.10);
+    border: 1px solid rgba(204, 200, 255, 0.10);
+    color: rgba(204, 200, 255, 0.5);
+    text-transform: uppercase;
+}
+.button:hover{
+    font-family: Helvetica;
+    font-weight: semibold;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    background-color: rgba(204, 200, 255, 0.3);
+    border: 1px solid rgba(204, 200, 255, 0.10);
+    color: rgba(204, 200, 255, 0.8);
+    text-transform: uppercase;
+}
+.button:focus{
+    font-family: Helvetica;
+    font-weight: semibold;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    background-color: rgba(204, 200, 255, 0.10);
+    border: 1px solid rgba(204, 200, 255, 0.10);
+    color: rgba(204, 200, 255, 0.8);
+    text-transform: uppercase;
+}
+.page-header {
+    background-image: url("../img/background.svg");
+    background-size: cover;
+    background-color: #25072e;
+    padding: 0px;
+    margin: 0px;
+}
+.page-logo {
+    font-family: OpenSans, sans-Semibold;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 4.5px;
+    margin: 20px;
+    text-align: right;
+    position: fixed;
+}
+.page-navigation {
+    margin:20px;
+    position: fixed;
+    z-index: 1;
+    top: 0; 
+    left: 0;
+}
+.page-navigation__items {
+    list-style-type: none;
+    margin: 20px;
+    margin-top: 80px;
+    padding: 0;
+    color: #ec008c;
+}
+.page-navitagion__item {
+    font-family: Helvetica;
+    font-size: 13px;
+    letter-spacing: 6.7px;
+    text-transform: uppercase;
+    color: #ec008c;
+    text-decoration: none;
+    text-decoration-color: #ec008c;
+    font-weight: bold;
+}
+.page-navitagion__item a{
+    font-family: Helvetica;
+    font-size: 13px;
+    letter-spacing: 6.7px;
+    text-transform: uppercase;
+    color: rgba(236, 0, 140, 0.6);
+    text-decoration: none;
+    text-decoration-color: (236, 0, 140, 1);
+    font-weight: bold;
+}
+.page-navitagion__item a:active {
+    font-family: Helvetica;
+    font-size: 13px;
+    letter-spacing: 6.7px;
+    text-transform: uppercase;
+    color:rgba(236, 0, 140, 1);
+    text-decoration: none;
+    font-weight: bold;
+}
+.page-navitagion__item a:disabled {
+    font-family: OpenSans;
+    font-size: 13px;
+    letter-spacing: 6.7px;
+    text-transform: uppercase;
+    color:rgba(236, 0, 140, 0.4);
+    text-decoration: none;
+    font-weight: bold;
+}
+.page-navitagion__item a:hover {
+    font-family: Helvetica;
+    font-size: 13px;
+    letter-spacing: 6.7px;
+    text-transform: uppercase;
+    color:rgba(236, 0, 140, 1);
+    text-decoration: none;
+    font-weight: bold;
+}
+.page-navitagion__item a:visited {
+    font-family: Helvetica;
+    font-size: 13px;
+    letter-spacing: 6.7px;
+    text-transform: uppercase;
+    color:rgba(236, 0, 140, 0.6);
+    text-decoration: none;
+    font-weight: bold;
+}
+.page-content {
+
+}
+.content-section {
+    /* width: 100vw; */
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+.content-section__header {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 40px;
+    color:#ec008c;
+} 
+#home {
+    background-image: url("../img/background.svg");
+    background-size: contain;
+}
+.band-members {
+    list-style-type: none;
+    display:flex;  
+    list-style:none;
+}
+.band-members_items {
+  
+}
+.band-members_item {
+
+}
+.band-members__image {
+    filter: brightness(50%);
+}
+.band-members__image:hover {
+    filter: brightness(100%);
+}
+.band-members__name {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3.8px;
+    text-transform: uppercase;
+    text-align: left;
+    color: rgba(204, 200, 255, 1);
+}
+.band-members__name:hover {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3.8px;
+    text-transform: uppercase;
+    text-align: left;
+    color: rgba(204, 200, 255, 1);
+}
+.band-members__desc {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    text-align: left;
+    color:  rgba(204, 200, 255, 0.5);
+    margin-right: 20px;
+}
+.band-members__desc:hover {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    text-align: left;
+    color:  rgba(204, 200, 255, 0.5);
+    margin-right: 20px;
+}
+.about-section {
+
+}
+.about-section__desc {
+    padding: 30px;
+    padding-top: 20px;
+    width:25vw;
+    z-index: 1;
+    background-color: rgb(42, 39, 85);
+    border-bottom: 3px solid rgba(236, 0, 140, 1);
+    position: relative;
+    bottom: 100px;
+    left: 40px;
+    
+}
+.about-section__desc-header{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3.8px;
+    text-transform: uppercase;
+    text-align: left;
+    color: rgba(204, 200, 255, 1);
+}
+.about-section__desc-paragraph {
+    font-family: OpenSans;
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    text-align: left;
+    color: rgba(204, 200, 255, 0.5);
+}
+.about-section__image{
+    width: 50vw;
+    border-top: 3px solid rgba(236, 0, 140, 1);
+}
+iframe {
+    border-top: 3px solid rgba(236, 0, 140, 1);
+}
+#concerts {
+    background-image: url("../img/background.svg");
+    background-size: cover;
+}
+.concerts {
+
+}
+.concerts__item {
+    
+}
+.concerts__image {
+    border-bottom: 3px solid rgba(236, 0, 140, 1);
+}
+.concerts__info {
+
+}
+.concerts__date {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3.8px;
+    text-transform: uppercase;
+    text-align: left;
+    color: rgba(204, 200, 255, 1);
+}
+.concerts__location {
+    font-family: OpenSans;
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    text-align: left;
+    color: rgba(204, 200, 255, 0.5);
+}
+#photos {
+    background-image: url("../img/background.svg");
+    background-size: cover;
+}
+.gallery {
+    list-style-type: none;
+    margin-left: 0;
+    border-left: none;
+    list-style:none;
+}
+.gallery_item {
+}
+.gallery__image {
+    border-top: 3px solid rgba(236, 0, 140, 1);
+}
+address {
+    font-family: OpenSans;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color:rgba(204, 200, 255, 0.8);
+}
+.form {
+   
+}
+.form__field {
+
+}
+.form__label {
+    font-family: OpenSans;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color:rgba(204, 200, 255, 0.8);
+}
+.form__input {
+    background-color: rgba(204, 200, 255, 0.1);
+    border-color: rgba(204, 200, 255, 0.1);
+}
+.page-footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
+.social-links {
+    list-style-type: none;
+}
+.social-links__item {
+
+}
+.social-links__link {
+}
+.screen-reader-only {
+    display: none; 
+}
