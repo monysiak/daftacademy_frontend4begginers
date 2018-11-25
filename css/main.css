@@ -5,7 +5,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-color: #25072e;
-    /* background: url("../img/background.svg") no-repeat center center fixed; */
     color:#888089;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
@@ -20,7 +19,9 @@ body {
     border: 1px solid rgba(204, 200, 255, 0.10);
     color: rgba(204, 200, 255, 0.8);
     text-transform: uppercase;
+    border-radius: 3px;
     cursor: pointer;
+    padding: 5px 5px 5px 5px;
 }
 .button:active{
     font-family: Helvetica;
@@ -178,7 +179,6 @@ body {
     filter: brightness(100%);
 }
 .band-members__name {
-    font-family: 'OpenSans', sans-serif;
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 3.8px;
@@ -187,7 +187,6 @@ body {
     color: rgba(204, 200, 255, 1);
 }
 .band-members__name:hover {
-    font-family: 'OpenSans', sans-serif;
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 3.8px;
@@ -196,7 +195,6 @@ body {
     color: rgba(204, 200, 255, 1);
 }
 .band-members__desc {
-    font-family: 'OpenSans', sans-serif;
     font-size: 13px;
     letter-spacing: 3.5px;
     text-align: left;
@@ -204,7 +202,6 @@ body {
     margin-right: 20px;
 }
 .band-members__desc:hover {
-    font-family: 'OpenSans', sans-serif;
     font-size: 13px;
     letter-spacing: 3.5px;
     text-align: left;
@@ -227,12 +224,8 @@ body {
     position: relative;
     bottom: 17vw;
     right: 45vw;
-    /* bottom: 245px;
-    : 690px; */
-    
 }
 .about-section__desc-header{
-    font-family: 'OpenSans', sans-serif;
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 3.8px;
@@ -245,6 +238,7 @@ body {
     letter-spacing: 3.5px;
     text-align: left;
     background: #25072e;
+    color: #ccc8ff;
 }
 .about-section__image{
     width: 780px;
@@ -323,7 +317,8 @@ iframe {
 .contact__image {
     width: 465px;
     height: 310px;
-    margin: 0 80px 0 0;
+    margin: 30px 80px 0 0;
+    margin-bottom:40px;
 }
 .contact-section__container {
     display: flex;
@@ -332,20 +327,27 @@ iframe {
 }
 .contact-section__row {
     display: flex;
-    
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+
 }
 .content-section__address {
     display:inline-block;
     font-size: 13px;
-    font-style: normal;
+    font-weight: 600;
+    color: #ccc8ff;
+    font-style:normal;
+    opacity: 0.8;
     letter-spacing: 1.5px;
-    color:rgba(204, 200, 255, 0.8);
+}
+.form__field {
+    display: flex;
+    flex-direction: column;
 }
 .form__label {
     font-size: 13px;
+    font-weight:600;
     letter-spacing: 1.5px;
     color:rgba(204, 200, 255, 0.8);
     margin: 15px 0 0 0;
@@ -357,10 +359,15 @@ iframe {
     border: 1px solid rgba(204, 200, 255, 0.1);
     border-radius: 3px;
     margin: 15px 0 0 0;
+    width: 300px;
 }
 .contact__button 
 {
+    font-weight:bold;
     margin: 25px 0 0 0;
+    width: 150px;
+    padding-bottom:10px;
+    padding-top:10px;
 }
 .page-footer {
     position: fixed;
