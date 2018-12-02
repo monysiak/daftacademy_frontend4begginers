@@ -3,6 +3,7 @@
     <head>
         <title>6BM Band Official Website</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="./css/main.css">
     </head>
@@ -35,7 +36,7 @@
             </nav>
         </header>
         <main class="page-content">
-            <section id="home" class="content-section">
+            <section id="home" class="content-section home-section ">
                 <h2 class="content-section__header screen-reader-only">Home</h2>
                 <ul class="band-members">
                     <li class="band-members__item">
@@ -62,18 +63,20 @@
             </section>
             <section id="about" class="content-section about-section">
                 <h2 class="content-section__header">About</h2>
-                <img class="about-section__image" src="./img/band01.jpg" alt="Image of band members standing at the construction site" />
-                <div class="about-section__desc">
-                    <h3 class="about-section__desc-header">Straight from Lublin</h3>
-                    <p class="about-section__desc-paragraph">
-                        6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock.<br/>
-                        Band members aim to convey emotions, reflexion but also hope.<br/><br/>
-                        They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass.<br/>
-                        As for now they released their debut EP - TRINITY and they started working on their first full length album.
-                    </p>
+                <div class="about-section__container">    
+                    <img class="about-section__image" src="./img/band01.jpg" alt="Image of band members standing at the construction site" />
+                    <div class="about-section__desc">
+                        <h3 class="about-section__desc-header">Straight from Lublin</h3>
+                        <p class="about-section__desc-paragraph">
+                            6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock.<br/>
+                            Band members aim to convey emotions, reflexion but also hope.<br/><br/>
+                            They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass.<br/>
+                            As for now they released their debut EP - TRINITY and they started working on their first full length album.
+                        </p>
+                    </div>
                 </div>
             </section>
-            <section id="concerts" class="content-section">
+            <section id="concerts" class="content-section concerts-section">
                 <h2 class="content-section__header">Concerts</h2>
                 <div class="concerts">
                     <article class="concerts__item">
@@ -110,11 +113,13 @@
                     </article>
                 </div>
             </section>
-            <section id="video" class="content-section">
+            <section id="video" class="content-section video-section">
                 <h2 class="content-section__header">Video</h2>
-                <iframe width="853" height="480" src="https://www.youtube.com/embed/AstRXh-vKNI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="content-section__video">
+                        <iframe src="https://www.youtube.com/embed/AstRXh-vKNI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
             </section>
-            <section id="photos" class="content-section">
+            <section id="photos" class="content-section photos-section">
                 <h2 class="content-section__header">Photos</h2>
                 <ul class="gallery">
                     <li class="gallery__item">
@@ -151,7 +156,7 @@
                 <div class="contact-section__container">
                     <div class="contact-section__row">
                         <img class="contact__image" src="./img/band12.jpg" alt="Image of band members posing next to a train" />
-                        <address clas="content-section__address">
+                        <address class="content-section__address">
                             Tel: 123 456 789<br/>
                             E-mail: 6bmmusic@gmail.com
                         </address>
