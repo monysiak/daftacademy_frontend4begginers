@@ -1,553 +1,550 @@
-body {
-    background-image: url("../img/background.svg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: #25072e;
-    color:#888089;
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
-}
-.button {
-    font-family: Helvetica;
-    font-weight: semibold;
-    font-size: 12px;
-    letter-spacing: 1.6px;
-    background-color: rgba(204, 200, 255, 0.10);
-    border-style: hidden;
-    border: 1px solid rgba(204, 200, 255, 0.10);
-    color: rgba(204, 200, 255, 0.8);
-    text-transform: uppercase;
-    border-radius: 3px;
-    cursor: pointer;
-    padding: 5px 5px 5px 5px;
-}
-.button:active{
-    font-family: Helvetica;
-    background-color: rgba(204, 200, 255, 0.3);
-    border: 1px solid rgba(204, 200, 255, 0.10);
-    color: rgba(204, 200, 255, 0.8);
-}
-.button:disabled{
-    font-family: Helvetica;
-    background-color: rgba(204, 200, 255, 0.10);
-    border: 1px solid rgba(204, 200, 255, 0.10);
-    color: rgba(204, 200, 255, 0.5);
-}
-.button:hover{
-    font-family: Helvetica;
-    background-color: rgba(204, 200, 255, 0.3);
-    border: 1px solid rgba(204, 200, 255, 0.10);
-    color: rgba(204, 200, 255, 0.8);
-}
-.button:focus{
-    font-family: Helvetica;
-    background-color: rgba(204, 200, 255, 0.10);
-    border: 1px solid rgba(204, 200, 255, 0.10);
-    color: rgba(204, 200, 255, 0.8);
-}
-.page-header {
-    position: fixed;
-}
-.page-logo {
-    font-weight: bold;
-    font-size: 28px;
-    letter-spacing: 4.5px;
-    margin: 20px;
-    text-align: right;
-    position: fixed;
-}
-.page-navigation {
-    margin:20px;
-    position: fixed;
-    z-index: 1;
-    top: 0; 
-    left: 0;
-}
-.page-navigation__items {
-    list-style-type: none;
-    margin: 20px;
-    margin-top: 80px;
-    padding: 0;
-    color: #ec008c;
-}
-.page-navitagion__item {
-    font-family: Helvetica;
-    font-size: 13px;
-    letter-spacing: 6.7px;
-    text-transform: uppercase;
-    color: #ec008c;
-    text-decoration: none;
-    text-decoration-color: #ec008c;
-    font-weight: bold;
-}
-.page-navitagion__item a{
-    font-family: Helvetica;
-    font-size: 13px;
-    letter-spacing: 6.7px;
-    text-transform: uppercase;
-    color: rgba(236, 0, 140, 0.6);
-    text-decoration: none;
-    text-decoration-color: (236, 0, 140, 1);
-    font-weight: bold;
-}
-.page-navitagion__item a:active {
-    font-family: Helvetica;
-    font-size: 13px;
-    letter-spacing: 6.7px;
-    text-transform: uppercase;
-    color:rgba(236, 0, 140, 1);
-    text-decoration: none;
-    font-weight: bold;
-}
-.page-navitagion__item a:disabled {
-    font-family: OpenSans;
-    font-size: 13px;
-    letter-spacing: 6.7px;
-    text-transform: uppercase;
-    color:rgba(236, 0, 140, 0.4);
-    text-decoration: none;
-    font-weight: bold;
-}
-.page-navitagion__item a:hover {
-    font-family: Helvetica;
-    font-size: 13px;
-    letter-spacing: 6.7px;
-    text-transform: uppercase;
-    color:rgba(236, 0, 140, 1);
-    text-decoration: none;
-    font-weight: bold;
-}
-.page-navitagion__item a:visited {
-    font-family: Helvetica;
-    font-size: 13px;
-    letter-spacing: 6.7px;
-    text-transform: uppercase;
-    color:rgba(236, 0, 140, 0.6);
-    text-decoration: none;
-    font-weight: bold;
-}
-@media (max-width: 1400px) { 
-    .page-logo {
-        position: relative;
-    }
-    .page-header {
-        position: relative;
-    }
-    .page-navigation {
-        position: relative;
-    }
-    .page-navigation__items
-    {
-        margin: 0px 0px 0px 0px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
-@media (max-width: 768px) { 
-    .page-logo {
-        position: relative;
-    }
-    .page-header {
-        position: relative;
-    }
-    .page-navigation {
-        position: relative;
-    }
-    .page-navigation__items
-    {
-        margin: 0px 0px 0px 0px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
-.content-section {
-    max-width: 100vw;
-    min-height: 100vh;
-    padding-left: 20vw;
-    padding-right: 10vw;
-}
-.content-section__header {
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 4.5px;
-    text-transform: uppercase;
-    text-align: right;
-    margin-top: 40px;
-    color:#ec008c;
-} 
-@media (max-width: 1024px) { 
-    .content-section {
-        min-height: initial;
-        padding-left: 0vw;
-        padding-right: 0vw;
-        margin: 0 0 0 0;
-        margin-left: 15px;
-        margin-right: 15px;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-@media (max-width: 768px) { 
-    .content-section__header {
-        display: block;
-        padding-left: 0vw;
-        padding-right: 0vw;
-        min-height: initial;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-.home-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.band-members {
-    list-style-type: none;
-    display:flex;  
-    list-style:none;
-}
-.band-members__image {
-    filter: brightness(50%);
-}
-.band-members__image:hover {
-    filter: brightness(100%);
-}
-.band-members__name {
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 3.8px;
-    text-transform: uppercase;
-    text-align: left;
-    color: rgba(204, 200, 255, 1);
-}
-.band-members__name:hover {
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 3.8px;
-    text-transform: uppercase;
-    text-align: left;
-    color: rgba(204, 200, 255, 1);
-}
-.band-members__desc {
-    font-size: 13px;
-    letter-spacing: 3.5px;
-    text-align: left;
-    color:  rgba(204, 200, 255, 0.5);
-    margin-right: 20px;
-}
-.band-members__desc:hover {
-    font-size: 13px;
-    letter-spacing: 3.5px;
-    text-align: left;
-    color:  rgba(204, 200, 255, 0.5);
-    margin-right: 20px;
-}
-@media (max-width: 768px) and (max-width: 900px) { 
-    .band-members__image{
-        width: 30vw;
-    }
-    .band-members {
-        display:inline-block;
-    }
-    .band-members__desc {
-        margin-right: 0px;
-    }
-}
-.about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.about-section__desc {
-    padding: 30px;
-    padding-top: 20px;
-    width:25vw;
-    z-index: 1;
-    background-color: rgb(36, 6, 45);
-    border-bottom: 3px solid rgba(236, 0, 140, 1);
+* {
     box-sizing: border-box;
-    position: relative;
-    bottom: 17vw;
-    right: 45vw;
 }
-.about-section__desc-header{
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 3.8px;
-    text-transform: uppercase;
-    text-align: left;
-    color: rgba(204, 200, 255, 1);
-}
-.about-section__desc-paragraph {
-    font-size: 13px;
-    letter-spacing: 3.5px;
-    text-align: left;
-    background: #25072e;
-    color: #ccc8ff;
-}
-.about-section__image{
-    width: 780px;
-    height: 510px;
-    border-top: 3px solid rgba(236, 0, 140, 1);
-}
-@media (max-width: 1024px) { 
-    .about-section__container {
-        display: inline-block;
-        margin: 0 20px 0 20px;
-    }
-}
-@media (max-width: 768px) {
-    .about-section__container{
-        align-items: center;
-    } 
-    .about-section__desc{
-        bottom: 0px;
-        width:80vw;
-        right:0vw;
-        left:0vw;
-    }
-    .about-section__image{
-        width: 80vw;
-        height: 33vh;
-    }
-}
-.video-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.content-section__video{
-    max-width: 100%;
-    max-height: 100%;
-}
-iframe {
-    width:853px;
-    height:480px;
-    border-top: 3px solid rgba(236, 0, 140, 1);
-}
-@media (max-width: 1024px) { 
-    .content-section__video{
-        align-items: center;
-    }
-}
-@media (max-width: 768px) { 
-    iframe {
-        width: 400px;
-        height: 300px;
-    }
-}
-.concerts-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.concerts{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-.concerts__item {
-    display: inline-block;
-    margin: 0 0 50px 50px;
-}
-.concerts__image {
-    border-bottom: 3px solid rgba(236, 0, 140, 1);
-    width: 360px;
-    height: 240px;
-}
-.concerts__date {
-    font-family: 'OpenSans', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 3.8px;
-    text-transform: uppercase;
-    text-align: left;
-    color: rgba(204, 200, 255, 1);
-}
-.concerts__location {
-    font-family: OpenSans;
-    font-size: 13px;
-    letter-spacing: 3.5px;
-    text-align: left;
-    color: rgba(204, 200, 255, 0.5);
-}
-@media (max-width: 1024px) { 
-    .concerts {
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media (max-width: 768px) { 
-    .content-section__header{
-        align-items: flex-end;
-    }
-    .concerts {
-        display: inline-block;
-        justify-content: center;
-    }
-    .concerts__image {
-        width: 300px;
-        height: 180px;
-    }
-}
-@media (max-width: 544px) { 
-    .concerts {
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .concerts__image {
-        width: 250px;
-        height: 168px;
-    }
-}
-.photos-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    list-style-type: none;
-    border-left: none;
-    list-style:none;
-    min-width: 1000px;
-}
-.gallery__item{
-    margin: 0 0 20px 20px;
-}
-.gallery__image {
-    width: 300px;
-    height: 200px;
-    border-top: 3px solid rgba(236, 0, 140, 1);
-}
-@media (max-width: 1024px) { 
-    .gallery{
-        justify-content: center;
-        align-items: center;
-    }
-    .gallery__item {
-        margin: 0 5px 5px 5px;
-    }
-}
-@media (max-width: 768px) { 
-    .gallery{
-        justify-content: center;
-        align-items: center;
-        min-width: 300px;
-        max-width: 700px;
-    }
-    .gallery__image {
-        max-width: 300px;
-    }
-}
-.contact__image {
-    width: 465px;
-    height: 310px;
-    margin: 30px 10px 0 0;
-    margin-bottom:40px;
-}
-.contact-section__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.contact-section__row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
 
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-.content-section__address {
-    display:inline-block;
-    font-size: 13px;
-    font-weight: 600;
-    color: #ccc8ff;
-    font-style:normal;
-    opacity: 0.8;
-    letter-spacing: 1.5px;
+
+h1, h2, h3 {
+    margin: 0;
 }
-.form__field {
-    display: flex;
-    flex-direction: column;
-}
-.form__label {
-    font-size: 13px;
-    font-weight:600;
-    letter-spacing: 1.5px;
-    color:rgba(204, 200, 255, 0.8);
-    margin: 15px 0 0 0;
-}
-.form__input {
-    background-color: rgba(204, 200, 255, 0.1);
-    border-color: rgba(204, 200, 255, 0.1);
-    padding: 12px 10px 10px 10px;
-    border: 1px solid rgba(204, 200, 255, 0.1);
-    border-radius: 3px;
-    margin: 15px 0 0 0;
-    width: 300px;
-}
-.contact__button 
-{
-    font-weight:bold;
-    margin: 25px 0 0 0;
-    width: 150px;
-    padding-bottom:10px;
-    padding-top:10px;
-}
-@media (max-width: 768px) { 
-    .contact-section__row {
-        display: block;
-    }
-    .contact__image {
-        width: 250px;
-        height: 170px;
-        margin: 0 0 0 0;
-        margin-bottom:40px;
-    }
-}
-.page-footer {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-}
-.social-links {
-    display: block;
-    list-style-type: none;
-}
-@media (max-width: 768px) { 
-    .page-footer {
-        position:relative;
-        display: flex;
-        flex-direction: row;
-        justify-content:  space-around;
-        align-items: center;
-        align-content: center;
-        padding: 0px;
-    }
-    .social-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        list-style-type: none;
-    }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .screen-reader-only {
-    display: none; 
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* 
+######################################
+TYPOGRAFIA
+######################################
+*/
+
+body {
+    color: rgba(204, 200, 255, 0.8);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+a {
+    color: #EF008E;
+    text-decoration: none;
+}
+
+/* 
+######################################
+PRZYCISKI
+######################################
+*/
+
+.button {
+    padding: 7px 15px;
+    border-radius: 3px;
+    background-color: rgba(204, 200, 255, 0.1);
+    border-color: rgba(204, 200, 255, 0.1);
+
+    color: rgba(204, 200, 255, 0.8);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+}
+.button:active{
+    background-color: rgba(204, 200, 255, 0.3);
+}
+.button:disabled{
+    color: rgba(204, 200, 255, 0.5);
+}
+.button:hover{
+    background-color: rgba(204, 200, 255, 0.3);
+    color: rgba(204, 200, 255, 0.8);
+}
+.button:focus{
+    color: rgba(204, 200, 255, 0.8);
+}
+
+/* 
+######################################
+FORMULARZE
+######################################
+*/
+
+.form__field {
+    margin-bottom: 10px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.form__input {
+    display: block;
+    height: 35px;
+    width: 300px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(219, 216, 251, 0.1);
+}
+
+@media screen and ( max-width: 1024px ) {
+    .form__input {
+        width: 100%;
+    }
+}
+
+/* 
+######################################
+GŁÓWNY LAYOUT STRONY
+######################################
+*/
+
+.page-header {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+
+.page-content {
+    margin-left: 220px;
+    padding: 0 10%;
+}
+
+@media screen and ( max-width: 1280px ) {
+    .page-header {
+        position: static;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .page-content {
+        margin-left: 0;
+    }
+
+    .page-footer {
+        position: static;
+    }
+}
+
+/* 
+######################################
+NAWIGACJA
+######################################
+*/
+
+.page-navigation__items {
+    padding-top: 15px;
+}
+
+.page-navigation__item a {
+    color: rgba(239, 0, 142, 0.6);
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 6.7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.page-navigation__item a:active {
+    font-family: Helvetica;
+    color:rgba(236, 0, 140, 1);
+}
+.page-navigation__item a:disabled {
+    color:rgba(236, 0, 140, 0.4);
+}
+.page-navigation__item a:hover {
+    font-family: Helvetica;
+    color:rgba(236, 0, 140, 1);
+}
+.page-navigation__item a:visited {
+    font-family: Helvetica;
+    color:rgba(236, 0, 140, 0.6);
+}
+
+@media screen and ( min-width: 1025px ) and ( max-width: 1280px ) {
+    .page-navigation__item {
+        display: inline-block;
+    }
+
+    .page-navigation__item {
+        margin: 0 20px;
+    }
+}
+
+/* 
+######################################
+LINKI DO SOCIAL MEDIA
+######################################
+*/
+
+.social-links__item + .social-links__item {
+    margin-top: 15px;
+}
+
+.social-links__item img {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and ( max-width: 1280px ) {
+    .social-links {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .social-links__item {
+        display: inline-block;
+    }
+
+    .social-links__item + .social-links__item {
+        margin-top: 0;
+        margin-left: 15px;
+    }
+}
+
+/* 
+######################################
+STYLE WSPÓLNE DLA WSZYSTKICH SEKCJI
+######################################
+*/
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+
+@media screen and ( max-width: 1024px ) {
+    .content-section {
+        min-height: 0;
+        padding-bottom: 100px;
+    }
+}
+
+.content-section__header {
+    margin-bottom: 60px;
+    color: #EF008E;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+}
+
+.content-section__body {
+    flex-grow: 1;
+}
+
+/* 
+######################################
+SEKCJA "HOME"
+######################################
+*/
+
+.content-section.home-section {
+    align-items: center;
+}
+
+.band-members {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.band-members__image{
+    opacity: 0.5;
+}
+.band-members__name{
+    visibility: hidden;
+}
+.band-members__desc{
+    visibility: hidden;
+}
+.band-members__item:hover .band-members__image {
+    opacity: 1;
+}   
+.band-members__item:hover .band-members__name{
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3.8px;
+    text-transform: uppercase;
+    text-align: left;
+    color: rgba(204, 200, 255, 1);
+    visibility: visible;
+}
+    
+.band-members__item:hover .band-members__desc{
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    text-align: left;
+    color:  rgba(204, 200, 255, 0.5);
+    margin-right: 20px; 
+    visibility: visible;
+}
+
+@media screen and ( min-width: 1025px ) and ( max-width: 1280px ) {
+    .content-section.home-section {
+        justify-content: flex-start;
+        padding-top: 20vh;
+    }
+}
+
+@media screen and ( max-width: 1024px ) {
+    .band-members {
+        flex-direction: column;
+    }
+
+    .band-members__image {
+        margin: 50px 0 10px;
+    }
+
+    .band-members__name,
+    .band-members__desc {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* 
+######################################
+SEKCJA "ABOUT"
+######################################
+*/
+
+/*
+Żeby ustawić opis zespołu w rogu zdjęcia, można zastosować popularną sztuczkę z pozycjonowaniem.
+Wykorzystuje ona właściwość elementów z "position: absolute", których położenie jest ustalane
+względem najbliższego mu rodzica, który jest pozycjonowany (ma ustawione "position" na inne
+niż "static", czyli "absolute", "relative", "fixed" lub "sticky").
+Dlatego gdy na jego rodzica "about" ustawimy "position: relative" (które bez parametrów
+dodatkowych top, left, bottom, right, nic nie zmienia w jego pozycji), to zawarty w nim
+element "about__desc" ustawia się absolutnie względem niego.
+Gdy dodamy wartości "left: -290px" i "bottom: -115px", wtedy "about__desc" będzie wystawać
+z lewego dolnego rogu "about" dokładnie o te odległości.
+Natomiast aby nie dopuścić do sytuacji, że wystający "about__desc" nachodził
+na sąsiadujące sekcje na stronie, nadajemy "about" marginesy adekwatne do odległości
+podane przy pozycjonowaniu "about_desc".
+*/
+.about {
+    position: relative;
+    margin-left: 290px;
+    margin-bottom: 115px;
+}
+
+.about__image {
+    max-width: 100%;
+    border-top: 3px solid #EF008E;
+}
+
+.about__desc-header {
+    margin-bottom: 30px;
+    color: #CCC8FF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about__desc {
+    position: absolute;
+    left: -290px;
+    bottom: -115px;
+    width: 380px;
+    padding: 30px;
+    background-color: #25072e;
+    border-bottom: 3px solid #EF008E;
+}
+
+@media screen and ( max-width: 1024px ) {
+    .about {
+        margin: 0;
+    }
+
+    .about__desc {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* 
+######################################
+SEKCJA "CONCERTS"
+######################################
+*/
+
+.concerts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.concerts__item {
+    flex-basis: 50%;
+    padding: 0 0 45px 55px;
+}
+
+.concerts__image {
+    max-width: 100%;
+    border-bottom: 3px solid #EF008E;
+}
+
+.concerts__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.concerts__info-base {
+    flex-grow: 1;
+}
+
+.concerts__date {
+    margin: 0;
+    color: #CCC8FF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3.8px;
+}
+
+.concerts__location {
+    margin: 0;
+    letter-spacing: 3.8px;
+}
+
+@media screen and ( max-width: 1024px ) {
+    .concerts {
+        display: block;
+        width: auto;
+    }
+
+    .concerts__item {
+        padding-left: 0;
+    }
+}
+
+/* 
+######################################
+SEKCJA "VIDEO"
+######################################
+*/
+
+.embedded-video {
+    border-top: 3px solid #EF008E;
+}
+
+@media screen and ( max-width: 1024px ) {
+    .embedded-video {
+        max-width: 100%;
+    }
+}
+
+/* 
+######################################
+SEKCJA "PHOTOS"
+######################################
+*/
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.gallery__item {
+    flex-basis: 33.3%;
+    padding: 0 0 20px 20px;
+}
+
+.gallery__image {
+    max-width: 100%;
+    border-top: 3px solid #EF008E;
+}
+
+.gallery__image:hover {
+    transition-timing-function: ease;
+    transform: scale(1.1);
+}
+
+@media screen and ( max-width: 1024px ) {
+    .gallery {
+        display: block;
+        width: auto;
+    }
+
+    .gallery__item {
+        padding-left: 0;
+    }
+}
+
+/* 
+######################################
+SEKCJA "CONTACT"
+######################################
+*/
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact__image img {
+    max-width: 100%;
+}
+
+.contact__address {
+    padding: 70px;
+    font-style: normal;
+}
+
+.contact__form {
+    flex-basis: 50%;
+    padding-top: 40px;
+}
+
+.contact__form .button {
+    margin-top: 20px;
+}
+
+@media screen and ( max-width: 1024px ) {
+    .contact {
+        display: block;
+    }
+
+    .contact__address {
+        padding: 30px 0 0;
+    }
+
+    .contact__form {
+        padding-top: 30px;
+    }
 }
